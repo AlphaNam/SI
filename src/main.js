@@ -11,6 +11,8 @@ import App from './App.vue';
 import CreateItem from './components/CreateItem.vue';
 import DisplayItem from './components/DisplayItem.vue';
 import EditItem from './components/EditItem.vue';
+import Login from './components/Login.vue';
+import Cart from './components/Cart.vue';
 
 const routes = [
   {
@@ -20,13 +22,23 @@ const routes = [
     },
     {
           name: 'DisplayItem',
-          path: '/',
+          path: '/display',
           component: DisplayItem
       },
       {
             name: 'EditItem',
             path: '/edit/:id',
             component: EditItem
+        },
+        {
+            name: 'Login',
+            path: '/',
+            component: Login
+        },
+        {
+            name: 'Cart',
+            path: '/cart',
+            component: Cart
         }
 ];
 

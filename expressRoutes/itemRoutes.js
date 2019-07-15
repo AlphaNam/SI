@@ -64,4 +64,10 @@ itemRoutes.route('/delete/:id').get(function (req, res) {
 	});
 });
 
+/*itemRoutes.route('/cart/').get(function (req, res) {
+  Item.findByIdAndRemove({_id: req.params.id}, function(err, item){
+		if(err) res.json(err);
+		else res.json('Successfully removed');
+	});
+*/
 module.exports = itemRoutes;
